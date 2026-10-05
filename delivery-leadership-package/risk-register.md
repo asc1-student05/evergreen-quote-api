@@ -1,0 +1,15 @@
+# Risk Register
+
+| # | Risk | Owner | Likelihood (L/M/H) | Impact (L/M/H) | Mitigation | Trigger to Escalate |
+|---|------|--------|-------------------|---------------|------------|--------------------|
+| R1 | The API returns successful responses, but premium calculations are incorrect, resulting in inaccurate insurance quotes being displayed during the demo. | Jyoti Kumari | M | H | Run automated tests after every code integration step and validate premium calculations using sample records. | Any premium calculation test fails or discrepancies are found during API validation. |
+| R2 | MongoDB connection or seeded data is unavailable, preventing API and GraphQL testing. | Jyoti Kumari | M | H | Verify database connectivity daily, reseed data if necessary, and maintain backup seed files. | Database connection errors persist for more than 30 minutes. |
+| R3 | GitHub Actions pipeline fails due to build, dependency, or test issues, delaying deployment activities. | Jyoti Kumari | M | H | Execute tests locally before committing changes and review workflow logs after every push. | CI pipeline remains red after two corrective attempts. |
+| R4 | Kubernetes deployment completes but pods fail health checks or do not scale successfully to three replicas. | Jyoti Kumari | M | H | Validate deployment manifests in advance and verify pod health after every deployment step. | Any pod enters CrashLoopBackOff state or fewer than three healthy replicas are available before release review. |
+| R5 | Scope expansion from stakeholder requests reduces time available for required Day 4 and Day 5 deployment activities. | Jyoti Kumari | M | M | Prioritize core delivery requirements and evaluate every new request against delivery goals before accepting changes. | New work request impacts the planned delivery timeline by more than one day. |
+| R6 | AI-generated code or tests from GitHub Copilot contain incorrect logic that is accepted without adequate review. | Jyoti Kumari | M | M | Review all AI-generated output, validate using automated tests, and perform manual verification before use. | AI-generated code causes test failures or introduces unexpected behavior. |
+| R7 | Pull request review or merge activities are delayed due to unresolved comments or failed validation checks. | Jyoti Kumari | L | M | Create PR early, monitor feedback, and address review comments promptly. | PR remains unapproved or CI checks remain red within 24 hours of planned merge. |
+
+## How I'll Use This Register
+
+I will review this risk register at the beginning and end of each project day and update it whenever new risks are identified. The register will be shared with project stakeholders during daily status updates and used as a discussion point during sponsor check-ins. Risks with High impact or active escalation triggers will be highlighted immediately to ensure timely mitigation and informed delivery decisions.
