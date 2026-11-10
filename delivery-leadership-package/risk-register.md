@@ -9,6 +9,7 @@
 | R5 | Scope expansion from stakeholder requests reduces time available for required Day 4 and Day 5 deployment activities. | Jyoti Kumari | M | M | Prioritize core delivery requirements and evaluate every new request against delivery goals before accepting changes. | New work request impacts the planned delivery timeline by more than one day. |
 | R6 | AI-generated code or tests from GitHub Copilot contain incorrect logic that is accepted without adequate review. | Jyoti Kumari | M | M | Review all AI-generated output, validate using automated tests, and perform manual verification before use. | AI-generated code causes test failures or introduces unexpected behavior. |
 | R7 | Pull request review or merge activities are delayed due to unresolved comments or failed validation checks. | Jyoti Kumari | L | M | Create PR early, monitor feedback, and address review comments promptly. | PR remains unapproved or CI checks remain red within 24 hours of planned merge. |
+| R8 | Sponsor request for renters coverage expands project scope and impacts committed delivery timelines. | Jyoti Kumari | M  | H | Defer implementation until business requirements and premium rates are approved. Protect current delivery commitments and delivery goals. | Sponsor requires renters coverage before current release activities are completed. |
 
 ## How I'll Use This Register
 
