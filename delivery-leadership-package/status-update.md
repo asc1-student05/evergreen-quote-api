@@ -20,7 +20,7 @@ The request to add renters coverage will not be included in this week's release.
 - Enable and validate GitHub Actions CI workflow.
 - Review deployment artifacts and deployment policies.
 - Complete the Copilot assessment activity.
-- Assess release readiness and deployment risks.
+- Assess release readiness and deployment risks updated.
 
 ### What I need from you
 
