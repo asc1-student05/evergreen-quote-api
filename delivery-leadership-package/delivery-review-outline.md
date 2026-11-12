@@ -1,12 +1,12 @@
 # Delivery Review: Evergreen Quote
 
-> Copy to `delivery-leadership-package/delivery-review-outline.md`. Five slides OR one page. Target: 5 minutes spoken, then 3 minutes of questions.
+Five slides OR one page. Target: 5 minutes spoken, then 3 minutes of questions.
 
 ## Slide 1: Delivery goal & did we hit it?
 
-- Goal (one sentence): _from delivery-goal.md_
-- Hit? ☐ Yes  ☐ Partially  ☐ No
-- One-line "why" either way.
+- **Goal:** By Thursday EOD, assemble the Evergreen Quote API with REST and GraphQL backed by MongoDB, pass the test suite, containerize it, demonstrate it on a local Kubernetes cluster, and merge it to `main` through a reviewed PR with green CI.
+- **Hit?** ☒ Yes  ☐ Partially  ☐ No
+- **Why:** We met the goal: the API was assembled with REST and GraphQL backed by MongoDB, the tests passed after the CI issue was fixed, the service was containerized and demonstrated on the local Kubernetes cluster, and the reviewed PR was merged to `main` with green CI.
 
 ## Slide 2: What shipped
 
