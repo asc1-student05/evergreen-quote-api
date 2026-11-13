@@ -1,29 +1,35 @@
-# Decision Memo: _short title here_
+## Decision Memo: Renters Coverage Request
 
-> Copy to `delivery-leadership-package/decision-memo.md`. Target length: ~250 words. Write for a non-technical reader. Name the options you **rejected**, not just the one you picked.
+**Date:** Monday (Project started on Friday)
+**Author:** Jyoti Kumari
+**Decision Area:** Day 2 Scope Tradeoff
 
-**Date:**
-**Author:** _your name_
-**Decision area:** _e.g., Day 2 scope tradeoff_
+### Context
 
-## Context
+The project sponsor requested that renters coverage be made quotable through the Evergreen Quote API by Thursday. Initial review showed that renters coverage impacts multiple areas of the solution including the quote schema, premium rate table, seed data, automated tests, GraphQL schema, and customer-facing dropdown selections. The delivery goal has not changed and key deployment activities remain scheduled later in the week.
 
-_What was the situation that forced a choice? 2–3 sentences._
+### Options Considered
 
-## Options considered
+- **Option A: Add renters coverage this week**
+  - Pros: Supports the partner request immediately and allows earlier adoption.
+  - Cons: Requires updates across multiple components and introduces additional testing and delivery risk. A renters premium rate has not yet been approved.
 
-1. **Option A: _name_.** _Pros / cons in plain English._
-2. **Option B: _name_.** _Pros / cons._
-3. **Option C: _name_.** _Pros / cons._ (Optional.)
+- **Option B: Defer renters coverage to the next release**
+  - Pros: Protects the committed delivery goal, minimizes risk, and allows sufficient time for design, implementation, and testing.
+  - Cons: Partner onboarding is delayed until the next release cycle.
 
-## Recommendation
+- **Option C: Perform analysis only and revisit after sponsor approval**
+  - Pros: Improves understanding of the effort required.
+  - Cons: Does not provide customer value this week and still creates uncertainty around delivery commitments.
 
-_Which option. One paragraph._
+### Recommendation
 
-## Why
+Recommend Option B: defer renters coverage from the current release and include it in a future delivery increment after premium rates and business requirements are finalized.
 
-_The single most important reason, named in customer or business terms, not technical ones._
+### Why
 
-## What would change my mind
+The primary goal this week is to deliver a stable, tested, and deployable Evergreen Quote API. Introducing new scope late in the delivery cycle increases schedule risk and may impact solution quality and release readiness.
 
-_If X happened by Y date, I would revisit this._
+### What Would Change My Mind
+
+If the sponsor provides an approved renters premium rate and confirms by 11:00 AM Wednesday that renters coverage is the highest business priority, I would revisit this recommendation and reassess delivery impacts before proceeding.
