@@ -48,7 +48,6 @@ During the Wednesday incident exercise, the supplied CI log showed a failing tes
 - A partner requested renters quotes by Thursday and described them as “one more dropdown option.”
 - At the same time, Platform reported a moderate CVE in the pinned `node:22-alpine` base image. The patched tag was expected next week, and the API was not internet-exposed this week.
 - **My renters decision:** Defer it to a later round and record the work and dependencies on the project board.
-- **Base-image decision:** I recommended [state your actual ship/hold decision and any condition].
 - **What I needed:** A sponsor-approved renters rate for future planning and a clear platform/security decision on the current base image.
 
 ### Wednesday Inject #2 — Customer incident and simulated CI log
