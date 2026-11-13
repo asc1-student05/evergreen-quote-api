@@ -19,6 +19,7 @@
 - **Pull request:** [PR #16 — merged successfully](https://github.com/asc1-student05/evergreen-quote-api/pull/16)
 - **Corrected CI run:** [Successful Actions run](https://github.com/asc1-student05/evergreen-quote-api/actions/runs/43255734973/job/131313308404)
 - **Demo evidence:** Screenshots saved separately show the service and delivery demonstrations.
+ ![alt text](image-1.png)
 
 **What the API does:** It serves quotes through REST and GraphQL, stores them in MongoDB, validates quote requests, and calculates premiums using the shared rate table.
 
